@@ -1,0 +1,19 @@
+@import './styles/theme.css';
+
+/* Remove default Vite styles if any, or add base overrides */
+:root {
+  font-family: var(--font-sans);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  justify-content: center; /* Center the app-container mobile view */
+}
+
+#root {
+  width: 100%;
+}

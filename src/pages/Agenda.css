@@ -1,0 +1,31 @@
+.tabs {
+  display: flex;
+  background-color: var(--bg-tertiary);
+  border-radius: var(--radius-lg);
+  padding: 0.25rem;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 0.5rem 0;
+  text-align: center;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.tab-btn.active {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.empty-state {
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+}

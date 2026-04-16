@@ -1,0 +1,43 @@
+.announcement-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.announcement-card.urgent {
+  border-left: 4px solid var(--alert-color);
+  background: linear-gradient(90deg, rgba(239, 68, 68, 0.1) 0%, rgba(30, 41, 59, 0) 100%);
+  background-color: var(--bg-secondary);
+}
+
+.text-alert {
+  color: var(--alert-color);
+}
+
+.live-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--brand-primary);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(99, 102, 241, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+  }
+}
+
+.quick-action-btn {
+  height: 3.5rem;
+  font-size: 1.125rem;
+  box-shadow: var(--shadow-glow);
+}

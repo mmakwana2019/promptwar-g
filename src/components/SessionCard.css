@@ -1,0 +1,27 @@
+.session-card {
+  margin-bottom: 1rem;
+}
+
+.session-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.save-btn {
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-fast);
+}
+
+.save-btn:active {
+  transform: scale(0.8);
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
